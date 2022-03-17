@@ -1,0 +1,13 @@
+# IDE Stuff
+
+.vscode/
+.idea/
+
+# Python Stuff
+
+venv/
+
+# Java Stuff
+
+out/
+target/
