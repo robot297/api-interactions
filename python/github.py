@@ -10,7 +10,7 @@ url = 'https://api.github.com/repos/robot297/hello-world'
 
 headers = {
   'Accept': 'application/vnd.github.v3+json',
-  'Authorization': 'token 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' # Please note this key is set to expire
+  'Authorization': 'token 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' # Please note this key is set to expire
 }
 
 payload = {} # If you wanted to send data via the body that would go here

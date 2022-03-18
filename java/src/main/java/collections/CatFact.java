@@ -10,7 +10,11 @@ public class CatFact {
 
     private final static String CAT_URL = "https://catfact.ninja/fact";
 
-    public void getCatFacts() {
+    /**
+     * This is an anti pattern but a way to get data.
+     * @return Content from the api call.
+     */
+    public String getCatFacts() {
 
         try {
             URL url = new URL(CAT_URL);
@@ -39,11 +43,11 @@ public class CatFact {
             JSONObject JSONObject = (JSONObject) jsonParser.parse(data);
 
             //Get the required data using its key
-            System.out.println(String.valueOf(JSONObject.get("fact")));
+            return String.valueOf(JSONObject.get("fact"));
 
 
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            return e.getMessage();
         }
     }
     
