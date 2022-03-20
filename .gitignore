@@ -2,6 +2,7 @@
 
 .vscode/
 .idea/
+.vs/
 
 # Python Stuff
 
@@ -15,3 +16,11 @@ target/
 # Node Stuff
 
 node_modules/
+
+# .NET Stuff
+
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
