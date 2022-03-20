@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using System.Net.Http.Headers;
+using Newtonsoft.Json.Linq;
 
 namespace dotnet
 {
@@ -16,7 +17,7 @@ namespace dotnet
             
             var response = client.GetStringAsync(CAT_URL);
             var msg = await response;
-            Console.WriteLine(msg);
+            Console.WriteLine(JObject.Parse(msg)["fact"]);
         }
 
         private static async Task GetGitHubInfo()
@@ -35,6 +36,7 @@ namespace dotnet
         static async Task Main(string[] args)
         {
             await GetCatFact();
+            // await GetGitHubInfo();
         }
     }
 }
