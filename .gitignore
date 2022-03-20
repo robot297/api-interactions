@@ -11,3 +11,7 @@ venv/
 
 out/
 target/
+
+# Node Stuff
+
+node_modules/
