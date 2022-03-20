@@ -32,7 +32,8 @@ have node install the needed libraries.  To use this in your own library, make s
 ## .NET (C#)
 
 In this example I've showcased the same examples as above.  One with headers and one without headers.  This is using .NET 6
-and should work across all platforms.
+and should work across all platforms.  I'm using NewtonSoft Json to help parse the data.  To install this nuget package,
+run the command `dotnet add package Newtonsoft.Json` in the terminal
 
 ## Notes
 
