@@ -35,6 +35,16 @@ In this example I've showcased the same examples as above.  One with headers and
 and should work across all platforms.  I'm using NewtonSoft Json to help parse the data.  To install this nuget package,
 run the command `dotnet add package Newtonsoft.Json` in the terminal
 
+## PHP Example
+
+The recommended way to consume APIs in PHP is using the Guzzle HTTP client. To use it, first add it as a dependency in composer.
+
+```php
+composer require guzzlehttp/guzzle:^7.0
+```
+
+Next, follow the example in php/src/guzzle-example.php.
+
 ## Notes
 
 These examples are merely guides to help you get started.  There are much better ways to handle your calls and handle the data
