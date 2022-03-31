@@ -25,3 +25,6 @@ node_modules/
 msbuild.log
 msbuild.err
 msbuild.wrn
+
+# React stuff
+.DS_Store
