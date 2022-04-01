@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "catfact": "node catfact.js",
-    "github" : "node github.js"
+    "github": "node github.js"
   },
   "keywords": [],
   "author": "Daniel Obot",
