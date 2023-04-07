@@ -2,7 +2,9 @@
 """
 from requests.auth import HTTPBasicAuth
 from pprint import pprint
+from dotenv import load_dotenv
 import requests
+import os
 
 
 def find_customer():
@@ -36,7 +38,8 @@ def find_customer():
 def deposit_money():
     # This is where you'll put your api key and secret to authenticate
     # If you're using GitHub, you do not want to commit these secrets to your project.
-    basic_auth = HTTPBasicAuth("Key", "Secret")
+    load_dotenv()
+    basic_auth = HTTPBasicAuth(os.getenv('api_key'), os.getenv('api_secret'))
 
     # You need these headers so that the API knows what format you're sending you're data and what you expect.
     headers = {
